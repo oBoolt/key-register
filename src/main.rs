@@ -27,6 +27,7 @@ fn run() -> Result<(), &'static str> {
                 _ => return Err("Something gone wrong"),
             }
         }
+        return Ok(());
     }
 
     let mut file = match fs::OpenOptions::new()
